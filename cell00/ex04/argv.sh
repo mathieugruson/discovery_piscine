@@ -3,5 +3,12 @@ then
 	echo "No arguments supplied";
 	exit;
 fi
-echo $1 $2 $3
- 
+for i in 1 2 3
+do
+	echo $1
+	shift
+	if [[ $1 -eq 0 ]]
+	then
+	exit;
+fi
+done
